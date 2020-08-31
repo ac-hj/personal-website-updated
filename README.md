@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Refactored using React
+Refactored 'personal-website' project using React. Changed the design of the 'About me' page. 
+
+The website is still in development, especially with the 'About me' page. The other aspects of this project are complete, including making the website compatible with different platforms (e.g. mobile). 
 
 ## Available Scripts
 

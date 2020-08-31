@@ -8,7 +8,7 @@ export class Greeting extends Component {
         return (
             <main id="greeting">
                 <Helmet>
-                    <title>About me </title>
+                    <title>Home</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Helmet>
                 <div className="intro">
