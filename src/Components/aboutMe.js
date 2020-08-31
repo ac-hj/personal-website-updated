@@ -20,10 +20,18 @@ export class AboutMe extends Component {
                         {/*    <li> Women in STEM </li>*/}
                         {/*    <li> Artifical intelligence </li>*/}
                         {/*</ul>*/}
+                        <div id='circleDeco1'>
+                        </div>
+                        <div id='circleDeco2'>
+                        </div>
                         <span id="part1txt">Passion</span>
                         <img alt="computer" id="passion" src={ passion }/>
                     </div>
                     <div id="part2">
+                        <div id='circleDeco3'>
+                        </div>
+                        <div id='circleDeco4'>
+                        </div>
                         <span id="part2txt">Skills</span>
                         {/*<ul id="pl">*/}
                         {/*    <li> Java </li>*/}
@@ -36,6 +44,10 @@ export class AboutMe extends Component {
                         {/*</ul>*/}
                     </div>
                     <div id="part3">
+                        <div id='circleDeco5'>
+                        </div>
+                        <div id='circleDeco6'>
+                        </div>
                         <span id="part3txt">Hobbies</span>
                         {/*<ul id="ho">*/}
                         {/*    <li> Lego </li>*/}
