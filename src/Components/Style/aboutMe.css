@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .9;
+    }
+}
+
+/*Elements for wider screens*/
+@media only screen and (min-width: 1025px) {
+
+    .all {
+        background-color: seashell;
+        width: 100%;
+        height: 165vh;
+    }
+
+    #part1 {
+        height: 50vh;
+        width: 50vh;
+        background-color: orange;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        left: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+    }
+
+    #part1:hover {
+        height: 65vh;
+        width: 65vh;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+    @keyframes createBox {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes load{
+        0%{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateY(0px);
+        }
+    }
+
+    #part1txt {
+        margin-left: 15vw;
+        font-size: 3.7em;
+        color: white;
+        border-radius: 0;
+        background-color: black;
+    }
+
+    #part1:hover #part1txt{
+        visibility: hidden;
+    }
+
+    #part1:hover #click {
+        visibility: hidden;
+    }
+
+    #passion, #cali {
+        width: 29vh;
+        height: 29vh;
+        opacity: 100%;
+        left: 0;
+        margin-left: 50vh;
+        margin-top: 12vh;
+        z-index: -1;
+        position: absolute;
+        visibility: hidden;
+        border-radius: 50%;
+    }
+
+    #part1:hover #passion{
+        visibility: visible;
+    }
+
+    #pa {
+        color: #A57E0F;
+        list-style-type: square;
+        visibility: hidden;
+    }
+
+    #part1:hover #pa{
+        visibility: visible;
+    }
+
+    /* Skills tab */
+    #part2 {
+        height: 50vh;
+        width: 50vh;
+        background-color: #199AA4;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 60vh;
+        right: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+        z-index: 0;
+    }
+
+    #part2:hover {
+        height: 65vh;
+        width: 65vh;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+
+    @keyframes loadtwo{
+        0%{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateX(0px);
+        }
+    }
+
+    #part2txt {
+        font-weight: bold;
+        font-size: 10vh;
+        color: white;
+        letter-spacing: .15vw;
+        background-color: black;
+        right: 20vw;
+        position: absolute;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    #pl {
+        color: #423014;
+        list-style-type: square;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    #part2:hover #pl {
+        visibility: visible;
+    }
+
+    #part2:hover #part2txt {
+        visibility: hidden;
+    }
+
+    /* Hobbies tab */
+    #part3 {
+        height: 50vh;
+        width: 50vh;
+        background-color: #833054;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 120vh;
+        left: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+    }
+
+    #part3:hover {
+        height: 65vh;
+        width: 65vh;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+
+    @keyframes loadthree {
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateY(0px);
+        }
+    }
+
+    #part3txt {
+        font-size: 3.7em;
+        color: white;
+        border-radius: 0;
+        background-color: black;
+        margin-left: 15vw;
+    }
+
+    #part3:hover #part3txt {
+        visibility: hidden;
+    }
+
+    #part3:hover #cali{
+        visibility: visible;
+    }
+
+    #ho {
+        color: #22BDA8;
+        visibility: hidden;
+        margin-top: 3em;
+        list-style-type: square;
+    }
+
+    #part3:hover #ho {
+        visibility: visible;
+    }
+
+    /* Caption */
+    #click {
+        font-family: 'Sacramento', cursive;
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+        visibility: visible;
+    }
+
+
+    #scrollOne {
+        font-size: 4vh;
+        font-family: 'Kalam', cursive;
+        position: absolute;
+        left: 65vw;
+        top: 25vh;
+    }
+
+    #scrollTwo {
+        font-size: 4vh;
+        font-family: 'Kalam', cursive;
+        position: absolute;
+        left: 15vw;
+        top: 83vh;
+    }
+
+    #scrollThree {
+        width: 20vw;
+        font-size: 4vh;
+        font-family: 'Kalam', cursive;
+        position: absolute;
+        left: 70vw;
+        top: 135vh;
+    }
+
+    #circles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+
+    #circle1 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 75vw;
+        top: 32vh;
+        animation: flash 1s both;
+        animation-iteration-count:infinite;
+    }
+
+    #circle2 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 75vw;
+        top: 34vh;
+        animation: flash 1s both;
+        animation-delay: .5s;
+        animation-iteration-count:infinite;
+        margin: 0;
+    }
+
+    #circle3 {
+        margin: 0;
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 75vw;
+        top: 36vh;
+        animation: flash 1s both;
+        animation-iteration-count:infinite;
+        animation-delay: 1s;
+    }
+
+    #circle4 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 75vw;
+        top: 38vh;
+        animation: flash 1s both;
+        animation-delay: 1.5s;
+        animation-iteration-count:infinite;
+    }
+
+    #circleTwo1 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 20vw;
+        top: 90vh;
+        animation: flash 1s both;
+        animation-iteration-count:infinite;
+    }
+
+    #circleTwo2 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 20vw;
+        top: 92vh;
+        animation: flash 1s both;
+        animation-delay: .5s;
+        animation-iteration-count:infinite;
+        margin: 0;
+    }
+
+    #circleTwo3 {
+        margin: 0;
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 20vw;
+        top: 94vh;
+        animation: flash 1s both;
+        animation-iteration-count:infinite;
+        animation-delay: 1s;
+    }
+
+    #circleTwo4 {
+        height: 1vh;
+        width: 1vh;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 100;
+        left: 20vw;
+        top: 96vh;
+        animation: flash 1s both;
+        animation-delay: 1.5s;
+        animation-iteration-count:infinite;
+    }
+}
+
+/*Elements for narrower screens*/
+@media only screen and (max-width: 1024px) {
+    .all {
+        background-color: seashell;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #part1 {
+        height: 40vw;
+        width: 40vw;
+        background-color: orange;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 15vh;
+        left: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+    }
+
+    #part1:hover {
+        height: 50vw;
+        width: 50vw;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+    @keyframes load{
+        0%{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateY(0px);
+        }
+    }
+
+    #part1txt {
+        margin-left: 15vw;
+        font-size: 7vw;
+        color: white;
+        border-radius: 0;
+        background-color: black;
+    }
+
+    #part1:hover #part1txt{
+        visibility: hidden;
+    }
+
+    #part1:hover #click {
+        visibility: hidden;
+    }
+
+    #passion, #cali {
+        width: 25vw;
+        height: 25vw;
+        opacity: 100%;
+        left: 0;
+        margin-left: 28vw;
+        margin-top: 9vh;
+        z-index: -1;
+        position: absolute;
+        visibility: hidden;
+        border-radius: 50%;
+    }
+
+    #part1:hover #passion{
+        visibility: visible;
+    }
+
+    #pa {
+        color: #A57E0F;
+        list-style-type: square;
+        visibility: hidden;
+    }
+
+    #part1:hover #pa{
+        visibility: visible;
+    }
+
+    /* Skills tab */
+    #part2 {
+        height: 40vw;
+        width: 40vw;
+        background-color: #199AA4;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 45vh;
+        right: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+        z-index: 0;
+    }
+
+    #part2:hover {
+        height: 50vw;
+        width: 50vw;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+
+    @keyframes loadtwo{
+        0%{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateX(0px);
+        }
+    }
+
+    #part2txt {
+        font-weight: bold;
+        font-size: 7vw;
+        color: white;
+        letter-spacing: .15vw;
+        background-color: black;
+        right: 20vw;
+        position: absolute;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    #pl {
+        color: #423014;
+        list-style-type: square;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    #part2:hover #pl {
+        visibility: visible;
+    }
+
+    #part2:hover #part2txt {
+        visibility: hidden;
+    }
+
+    /* Hobbies tab */
+    #part3 {
+        height: 40vw;
+        width: 40vw;
+        background-color: #833054;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 75vh;
+        left: 5vw;
+        border-radius: 50%;
+        transition: all .1s linear;
+    }
+
+    #part3:hover {
+        height: 50vw;
+        width: 50vw;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .15em;
+        opacity: 100%;
+        transform: scale(1.1);
+    }
+
+    @keyframes loadthree {
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            transform: translateY(0px);
+        }
+    }
+
+    #part3txt {
+        font-size: 7vw;
+        color: white;
+        border-radius: 0;
+        background-color: black;
+        margin-left: 15vw;
+    }
+
+    #part3:hover #part3txt {
+        visibility: hidden;
+    }
+
+    #part3:hover #cali{
+        visibility: visible;
+    }
+
+    #ho {
+        color: #22BDA8;
+        visibility: hidden;
+        margin-top: 3em;
+        list-style-type: square;
+    }
+
+    #part3:hover #ho {
+        visibility: visible;
+    }
+
+    /* Caption */
+    #click {
+        font-family: 'Sacramento', cursive;
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+        visibility: visible;
+    }
+
+    #scrollOne, #scrollTwo, #scrollThree, #circles {
+        display: none;
+    }
+}

@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+#project {
+    font-family: "Verdana", sans-serif;
+    background-color: seashell;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 0;
+}
+/* Elements for narrower screens */
+@media only screen and (max-width: 1024px) {
+    #moviemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #movie {
+        opacity: 0.35;
+        background-image: url("./Moviesample.png");
+        width: 80vw;
+        height: 30vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #labelmovie, #labelsafe {
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 15vw;
+        z-index: 2;
+        letter-spacing: 0;
+        margin-top: 10vh;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: inline-block;
+        width: 100vw;
+    }
+
+    #moviedetail, #websitedetail, #safedetail {
+        display: none;
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        margin-top: 25vh;
+        margin-right: 15vw;
+        margin-bottom: 0;
+        font-size: 4vw;
+        right: 0;
+        z-index: 2;
+        background-color: orange;
+        letter-spacing: 0;
+    }
+
+    #moviemain:hover #moviedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 8em;
+    }
+
+    #safemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 7em;
+
+    }
+
+    #safe {
+        opacity: 0.35;
+        background-image: url("./safepic.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80vw;
+        height: 30vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #safemain:hover #safedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 5em;
+    }
+
+    #websitemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 7em;
+    }
+
+    #website {
+        opacity: 0.35;
+        background-image: url("./website.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80vw;
+        height: 30vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #labelwebsite {
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 15vw;
+        z-index: 2;
+        letter-spacing: 0;
+        margin: 9vh 0 0 0;
+        display: inline-block;
+        width: 70vw;
+        line-height: 7vh;
+    }
+
+    #websitemain:hover #websitedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 11em;
+    }
+
+    @keyframes loadtwo {
+        0%{
+            transform: translateX(50px);
+            visibility: hidden;
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            visibility: visible;
+            transform: translateX(0px);
+        }
+    }
+
+    #icon {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    img {
+        width: 2em;
+        height: 1.7em;
+    }
+
+
+    #linkedin {
+        animation: load 1s both;
+        font-size: 2em;
+        float: right;
+        margin-top: 1em;
+    }
+
+    #git {
+        animation: load 1s both;
+        animation-delay: 0.2s;
+        margin-top: 1em;
+    }
+
+    #email {
+        animation: load 1s both;
+        animation-delay: 0.4s;
+        margin-top: 1em;
+    }
+
+    #linked {
+        font-family: 'PT Sans', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin: 0.0em 0.0em;
+    }
+
+
+    @keyframes load{
+        0% {
+            transform: translateX(100px);
+            visibility: hidden;
+            opacity: 0;
+        }
+        100% {
+            opacity: .9;
+            visibility: visible;
+            transform: translateX(0px);
+        }
+    }
+}
+
+/* Elements for wider screens */
+@media only screen and (min-width: 1025px) {
+    #moviemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #movie {
+        opacity: 0.35;
+        background-image: url("./Moviesample.png");
+        width: 80vw;
+        height: 60vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #labelmovie {
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 10em;
+        z-index: 2;
+        letter-spacing: 0;
+        margin: 20vh 0 0 0;
+        display: inline-block;
+        width: 100vw;
+    }
+
+    #moviedetail {
+        display: none;
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        margin-top: 1em;
+        right: 0;
+        margin-right: 20vh;
+        margin-bottom: 8.5em;
+        bottom: 0;
+        font-size: 2em;
+        z-index: 2;
+        background-color: orange;
+        letter-spacing: 0;
+    }
+
+    #moviemain:hover #moviedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 8em;
+    }
+
+    #safemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 7em;
+
+    }
+
+    #safe {
+        opacity: 0.35;
+        background-image: url("./safepic.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80vw;
+        height: 60vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #labelsafe, #labelwebsite {
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 10em;
+        z-index: 2;
+        letter-spacing: 0;
+        margin: 20vh 0 0 0;
+        display: inline-block;
+        width: 100vw;
+    }
+
+    #safedetail, #websitedetail {
+        position: absolute;
+        display: none;
+        font-family: 'Nanum Pen Script', cursive;
+        margin-top: 13.5em;
+        right: 0;
+        margin-right: 20vh;
+        font-size: 2em;
+        z-index: 2;
+        background-color: orange;
+        letter-spacing: 0;
+    }
+
+    #safemain:hover #safedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 5em;
+    }
+
+    #websitemain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 7em;
+    }
+
+    #website {
+        opacity: 0.35;
+        background-image: url("./website.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80vw;
+        height: 60vh;
+        z-index: 0;
+        border: 3px solid grey;
+    }
+
+    #websitemain:hover #websitedetail{
+        display: inline-block;
+        animation: loadtwo 1s both;
+        width: 11em;
+    }
+
+    @keyframes loadtwo {
+        0%{
+            transform: translateX(100px);
+            visibility: hidden;
+            opacity: 0;
+        }
+        100%{
+            opacity: .9;
+            visibility: visible;
+            transform: translateX(0px);
+        }
+    }
+
+    #icon {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    img {
+        width: 2em;
+        height: 1.7em;
+    }
+
+
+    #linkedin {
+        animation: load 1s both;
+        font-size: 2em;
+        float: right;
+        margin-top: 1em;
+    }
+
+    #git {
+        animation: load 1s both;
+        animation-delay: 0.2s;
+        margin-top: 1em;
+    }
+
+    #email {
+        animation: load 1s both;
+        animation-delay: 0.4s;
+        margin-top: 1em;
+    }
+
+    #linked {
+        font-family: 'PT Sans', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin: 0.0em 0.0em;
+    }
+
+
+    @keyframes load{
+        0% {
+            transform: translateX(100px);
+            visibility: hidden;
+            opacity: 0;
+        }
+        100% {
+            opacity: .9;
+            visibility: visible;
+            transform: translateX(0px);
+        }
+    }
+}

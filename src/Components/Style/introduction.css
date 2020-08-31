@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+main {
+    background-color: seashell;
+    font-family: "Verdana", sans-serif;
+    padding-bottom: 13vh;
+}
+
+/* Elements for narrower screens */
+@media only screen and (max-width: 1024px) {
+    #picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 28vh;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #self {
+        height: 20vh;
+        width: 20vh;
+        border-radius: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border: 0 double #695438;
+    }
+
+    p {
+        font-size: 1vh;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 2vh;
+        text-align: center;
+    }
+
+    #lego {
+        font-size: 1.2vh;
+        width: 40em;
+        letter-spacing: .30vh;
+        line-height: 1vh;
+    }
+
+    #disney {
+        font-size: 1.2vh;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 1vh;
+    }
+
+    #learner {
+        font-size: 1.2vh;
+        width: 4vh;
+        letter-spacing: .30em;
+        line-height: 1vh;
+    }
+
+    #hello {
+        font-size: 4vh;
+        font-weight: bold;
+        letter-spacing: .30em;
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+}
+
+#caption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Elements for wider screens */
+@media only screen and (min-width: 1025px) {
+
+    #picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10vh;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #self {
+        height: 55vh;
+        width: 56vh;
+        border-radius: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        border: 0 double #695438;
+
+    }
+
+    #hello {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: .30em;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+
+    #lego {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+
+    #disney {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+
+    #learner {
+        font-size: 15px;
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+    }
+
+    p {
+        width: 40em;
+        letter-spacing: .30em;
+        line-height: 5vh;
+        margin-left: 4em;
+    }
+}
+
+
